@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.box {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+.div1 {
+  top: 75%;
+  left: 20%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+  animation: div1 infinite 5s;
+}
+h2 {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 20px;
+  margin-left: 250px;
+  font-size: 35px;
+  font-weight: 500px;
+  letter-spacing: 3px;
+  animation: h2 infinite 5s;
+}
+.div2 {
+  top: 75%;
+  left: 60%;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  transform: rotate(45deg);
+  animation: div2 infinite 5s;
+}
+h1 {
+  text-align: center;
+  padding-top: 40vh;
+  font-size: 35px;
+  color: white;
+  letter-spacing: -10px;
+  animation: yolo infinite 5s;
+}
+@keyframes yolo {
+  20% {
+    letter-spacing: -10px;
+    color: white;
+  }
+  25% {
+    letter-spacing: 10px;
+    color: white;
+    transform: rotate(45deg);
+  }
+  40% {
+    letter-spacing: 10px;
+    color: white;
+    transform: rotate(0deg);
+    transform: rotateY(90deg);
+  }
+  90% {
+    letter-spacing: 10px;
+    transform: rotateX(450deg);
+    color: rgb(255, 255, 255);
+  }
+}
+@keyframes div1 {
+  10% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    transform: rotate(-90deg);
+  }
+  70% {
+    opacity: 1;
+    /* transform: rotate(180deg); */
+    background-color: rgb(255, 255, 255);
+  }
+  100% {
+    position: absolute;
+    left: 200px;
+  }
+}
+@keyframes div2 {
+  10% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+  70% {
+    opacity: 1;
+    /* transform: rotate(180deg); */
+    background-color: rgb(255, 255, 255);
+  }
+  100% {
+    position: absolute;
+    left: 550px;
+  }
+}
+@keyframes h2 {
+  0% {
+    position: absolute;
+  }
+  50% {
+    position: absolute;
+    top: 140px;
+    opacity: 0.1;
+    transform: rotateX(90deg);
+  }
+  100% {
+    top: 256px;
+    opacity: 1;
+  }
+}
